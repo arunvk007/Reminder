@@ -1,0 +1,27 @@
+
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+   
+    <div class="fadeIn first">
+      <img src="assets/notification.png" id="icon" alt="User Icon" />
+    </div>
+    <br>
+
+    <form [formGroup]="dashform" (ngSubmit)="eventClick()">
+      <input type="text"  class="fadeIn second" name="login" placeholder="Event" formControlName="remevent"><br><br>
+      <input type="date"  class="fadeIn third" name="login" formControlName="remdate"><br><br>
+      <input type="submit" class="fadeIn fourth" value="ADD">
+      <button class="btn"><i class="fa fa-close"></i></button>
+      
+
+    </form>
+    <input type="submit" class="fadeIn fourth" routerLink="/list" value="EVENTS">
+    
+    <!-- Remind Passowrd -->
+    <!-- <div id="formFooter">
+      <a class="underlineHover" href="#">Forgot Password?</a>
+    </div> -->
+
+  </div>
+</div>
